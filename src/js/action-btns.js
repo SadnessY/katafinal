@@ -1,8 +1,8 @@
 let callbackBtn = document.querySelector(".call");
 let feedbackBth = document.querySelector(".callback")
-let sidebarCallback = document.querySelector(".sidebar__callback")
-let sidebarFeedback = document.querySelector(".sidebar__feedback")
-let BtnClose = document.querySelector(".menu-back");
+let sidebarCallback = document.querySelector(".sidebar__feedback")
+let sidebarFeedback = document.querySelector(".sidebar__callback")
+let BtnClose = document.querySelector(".sc__menu-back");
 
 
 document.addEventListener('click', function(evt) {

@@ -11,7 +11,12 @@
     flex-shrink: 1;
 
   }
-
+  p:first-child {
+    text-align: start;
+  }
+  p:last-child {
+    text-align: end;
+  }
   p {
     text-align: center;
     color: $color-active;

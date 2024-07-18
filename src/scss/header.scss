@@ -1,9 +1,5 @@
-.header{
-  @media (min-width: $screen-sm){
-    width: 320px;
-  }
-}
-.header__inner {
+
+.main-content__header {
   min-height: 80px;
   display: flex;
   justify-content: space-between;
@@ -20,7 +16,7 @@
   }
 }
 
-.header__name {
+.main-content__name {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,18 +34,19 @@
   }
 }
 
-.header__text {
+.name__text {
   position: relative;
 }
 
-.header__text h1 {
-  font-family: 'TT Lakes', sans-serif;
+.name__text h1 {
+  font-family: 'TT Lakes Bold', sans-serif;
   font-size: 28px;
+  padding-left: 10px;
   font-weight: 900;
   color: #1B1C21;
 }
 
-.header__text::before {
+.name__text::before {
   content: "";
   position: absolute;
   left: -13px;
@@ -87,24 +84,28 @@
 }
 
 
-.header__elem1, .header__elem2, .header__elem3,
-.header__elem4, .header__elem5, .header__elem7,
-.header__elem8 {
+.first__elem1, .first__elem2, .second__elem3,
+.second__elem4, .second__elem5, .second__elem7,
+.second__elem8 {
   margin: 0 8px 0 8px;
   cursor: pointer;
+  &:hover {
+    filter: hue-rotate(0.5turn);
+    transition: filter 1s;
+  }
   @media (min-width:$screen-lg){
     display:none;
   }
 }
 
-.header__elem1 {
+.first__elem1 {
   @media (min-width: $screen-md) {
     order: 1;
     margin-right: 42px;
   }
 }
 
-.header__elem2 {
+.first__elem2 {
   position: relative;
 
   @media (min-width: $screen-md) {
@@ -112,7 +113,7 @@
   }
 }
 
-.header__elem2::after {
+.first__elem2::after {
       content: "";
       position: absolute;
       left: 116px;
@@ -130,7 +131,7 @@
       }
 }
 
-.header__elem3 {
+.second__elem3 {
   display: none;
   @media (min-width: $screen-md) {
     display: block;
@@ -140,18 +141,7 @@
     display: none;
   }
 }
-.header__elem4 {
-  display: none;
-  @media (min-width: $screen-md) {
-    display: block;
-    margin-left: 16px;
-  }
-  @media (min-width: $screen-lg) {
-    display: none;
-  }
-}
-
-.header__elem5 {
+.second__elem4 {
   display: none;
   @media (min-width: $screen-md) {
     display: block;
@@ -162,8 +152,19 @@
   }
 }
 
-.header__elem7,
-.header__elem8 {
+.second__elem5 {
+  display: none;
+  @media (min-width: $screen-md) {
+    display: block;
+    margin-left: 16px;
+  }
+  @media (min-width: $screen-lg) {
+    display: none;
+  }
+}
+
+.second__elem7,
+.second__elem8 {
   @media (min-width: $screen-lg) {
     position: relative;
     display: flex;
@@ -173,13 +174,13 @@
   }
 }
 
-.header__elem7 {
+.second__elem7 {
  @media (min-width: $screen-md) {
   padding-left: 42px;
   }
 }
 
-.header__elem7::before {
+.second__elem7::before {
   content: "";
   position: absolute;
   left: -2px;
@@ -199,7 +200,7 @@
   }
 }
 
-.header__inner p {
+.header p {
   @media (min-width:$screen-lg) {
     display: block;
     letter-spacing: -0.2px;

@@ -1,4 +1,4 @@
-let microMenu = document.querySelectorAll('.micro-menu__container')[0].children;
+let microMenu = document.querySelectorAll('.micro-menu')[0].children;
 
 for (const elem of microMenu) {
   elem.addEventListener('click', (evt) => {

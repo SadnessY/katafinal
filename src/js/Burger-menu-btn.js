@@ -1,6 +1,6 @@
-let burgerBtnOpen = document.querySelector(".header__elem1");
-let burgerMenu = document.querySelector(".burger__container");
-let burgerBtnClose = document.querySelector(".menu-back");
+let burgerBtnOpen = document.querySelector(".first__elem1");
+let burgerMenu = document.querySelector(".burger");
+let burgerBtnClose = document.querySelector(".bh__menu-back");
 let selectedLink = null;
 
 
@@ -16,7 +16,7 @@ document.addEventListener('click', function(evt) {
   selectedLink = clickedLink;
 }
 
-  if (window.innerWidth < 1440 && evt.target.closest(".header__elem1")) {
+  if (window.innerWidth < 1440 && evt.target.closest(".first__elem1")) {
     burgerMenu.classList.toggle("active");
   } else if (window.innerWidth < 1440 && (!evt.target.closest(".burger__container"))
     || (evt.target.closest(".menu-back"))) {

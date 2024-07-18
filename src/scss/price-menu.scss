@@ -1,4 +1,4 @@
-.price-menu__container {
+.price-menu {
   position: relative;
   min-height: 234px;
   min-width: 320px;
@@ -12,7 +12,7 @@
   }
 }
 
-.price-menu__title {
+.price-menu-title {
   position: relative;
   height: 56px;
   margin: 16px 0 0 0;
@@ -49,14 +49,14 @@
     padding-top: 24px;
   }
 
-  .price__name {
+  .elem__name {
     line-height:0;
     color: $color-active;
     position: relative;
     left: 10px;
   }
 
-  .price__text {
+  .elem__text {
     width: 240px;
     height: 30px;
     padding: 0 0 10px 0;
@@ -66,8 +66,8 @@
   }
 }
 
-.price__case-1, .price__case-2, .price__case-3,
-.price__case-4, .price__case-5 {
+.cases__case-1, .cases__case-2, .cases__case-3,
+.cases__case-4, .cases__case-5 {
   margin: 0 0 24px 0;
 
   @media (min-width: $screen-md) {
@@ -79,7 +79,7 @@
     margin-right: 32px;
   }
 
-  .price__elem {
+  .case__elem {
     width: 260px;
     background: $color-blocks;
     height: 200px;
@@ -128,6 +128,7 @@
 
 .price__table {
   border-collapse: collapse;
+  margin-bottom: 32px;
   width: 100%;
 }
 
@@ -149,13 +150,13 @@
     border: none;
   }
 }
-.btn__position_price {
+.btn-position-price {
   position: absolute;
   top: 160px;
   left: 100px;
 }
 
-.btn__buy {
+.elem__buy-btn {
   width: 169px;
   height: 32px;
   color: white;
@@ -171,7 +172,7 @@
     left: 0;
   }
 }
-.btn__buy:hover {
+.elem__buy-btn:hover {
   cursor: pointer;
 }
 .table__disc{

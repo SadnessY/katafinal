@@ -1,4 +1,4 @@
-.brands-menu__container {
+.brands-menu {
   position: relative;
 }
 
@@ -45,10 +45,10 @@
   }
 }
 
-.brand-1, .brand-2, .brand-3,
-.brand-4, .brand-5, .brand-6,
-.brand-7, .brand-8, .brand-9,
-.brand-10, .brand-11 {
+.brand__1, .brand__2, .brand__3,
+.brand__4, .brand__5, .brand__6,
+.brand__7, .brand__8, .brand__9,
+.brand__10, .brand__11 {
   border: 0 solid $color-area-text;
   border-radius: 5%;
   margin: 0 0 20px 0;
@@ -70,20 +70,20 @@
   }
 }
 
-.brand-4, .brand-8,
-.brand-9, .brand-10, .brand-11{
+.brand__4, .brand__8,
+.brand__9, .brand__10, .brand__11{
   @media (min-width: $screen-md) {
     display: none;
   }
 }
 
-.brand-4, .brand-8{
+.brand__4, .brand__8{
   @media (min-width: $screen-lg) {
     display:inline;
   }
 }
 
-.brand-9, .brand-10, .brand-11 {
+.brand__9, .brand__10, .brand__11 {
   @media (min-width: $screen-md) {
     display: none;
   }
@@ -91,6 +91,8 @@
 
 .brands-menu__show-all{
   display: none;
+  font-family: 'TT Lakes Medium', sans-serif;
+  padding-left: 8px;
   margin: 0 0 0 32px;
 
   @media (min-width: $screen-md) {
@@ -144,7 +146,7 @@
   transform: rotate(-135deg);
 }
 
-.brands-menu__fader {
+.brand__fader {
   width: 24px;
   height: 81px;
   background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);

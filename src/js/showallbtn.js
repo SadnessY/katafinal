@@ -1,14 +1,14 @@
 const showAll = document.querySelector(".brands-menu__show-all");
-const showAlltext = document.querySelector(".brands-text__show-all");
-const brand9 = document.querySelector(".brand-9");
-const brand10 = document.querySelector(".brand-10");
-const brand11 = document.querySelector(".brand-11");
-const contentSelector = document.querySelector(".text__2");
-const contentSelectorBnt = document.querySelector(".content__btn-next");
-let contentsSelectorBtnText = document.querySelector(".content__btn-next-text");
+const showAlltext = document.querySelector(".show-all__text");
+const brand9 = document.querySelector(".brand__9");
+const brand10 = document.querySelector(".brand__10");
+const brand11 = document.querySelector(".brand__11");
+const contentSelector = document.querySelector(".text__1--hidden");
+const contentSelectorBnt = document.querySelector(".text__btn-next");
+let contentsSelectorBtnText = document.querySelector(".text__btn-text");
 const showAllTech = document.querySelector(".view-tech-menu__show-all");
-const techCase4 = document.querySelector(".view-tech__case-4");
-let showAllTechText = document.querySelector(".view-tech-text__show-all");
+const techCase4 = document.querySelector(".cases__case-4");
+let showAllTechText = document.querySelector(".show-all__text2");
 let statusMenuOpenedBrand = true;
 let statusMenuOpenedTech = true;
 
@@ -19,7 +19,7 @@ showAll.addEventListener("click", function (){
     brand11.style.display = "inline";
     showAlltext.innerHTML = "<p>Скрыть</p>"
     statusMenuOpenedBrand = false;
-    showAll.classList.add("brands-menu__show-all--rotated");
+    showAllText.classList.add("brands-menu__show-all--rotated");
   } else {
     brand9.style.display = "none";
     brand10.style.display = "none";

@@ -1,5 +1,5 @@
 body{
-  font-family: "TTLakes", sans-serif;
+  font-family: "TT Lakes Regular", sans-serif;
     padding:0;
     margin:0;
     @media (min-width: $screen-lg){
@@ -14,7 +14,9 @@ body{
     justify-content: center;
   }
 }
-
+.header__second div p {
+  font-family: 'TT Lakes Medium', sans-serif;
+}
 @media (min-width: 768px){
 
     .content__container{
